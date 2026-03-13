@@ -100,28 +100,27 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
 
 ### 2.1 — Приклади команд з NDG Lab 7 & 8
 
-| Назва команди | Її призначення та функціональність |
+| Команда | Призначення та функціональність |
 | :--- | :--- |
-| `pwd` | Визначає місце знаходження користувача у файловій системі, показує поточну робочу директорію (print working directory) |
-| `cd Documents` | Команда `cd` здійснює перехід до каталогу, який у неї вказаний як аргумент. В даному випадку це каталог `Documents`
-| `echo` | Виводить текст або значення змінних у термінал. Часто використовується для відображення повідомлень або результатів роботи скриптів |
-| `ls` | Показує список файлів і каталогів у поточній директорії |
-| `ls -a` | Показує всі файли і каталоги, включаючи приховані (ті, що починаються з крапки `.`) |
-| `ls -l` | Виводить список файлів у детальному форматі: права доступу, власник, розмір, дата створення або зміни |
-| `ls -R` | Рекурсивно показує вміст усіх підкаталогів поточного каталогу |
-| `ls -d` | Показує сам каталог як об'єкт, а не його вміст (корисно при роботі з шаблонами) |
-| `cp` | Копіює файл або каталог з одного місця у інше |
-| `cp -v` або `--verbose` | Копіює файли та показує детальну інформацію про процес копіювання (які файли копіюються) |
+| `pwd` | Показує поточну робочу директорію користувача (print working directory) |
+| `cd Documents` | Перехід у каталог `Documents` або інший каталог, зазначений як аргумент |
+| `echo` | Виводить текст або значення змінних у термінал; часто використовується для повідомлень або результатів скриптів |
+| `ls` | Відображає список файлів і каталогів у поточній директорії |
+| `ls -a` | Показує всі файли та каталоги, включаючи приховані (імена починаються з `.`) |
+| `ls -l` | Виводить детальний список: права доступу, власник, розмір, дата зміни |
+| `ls -R` | Рекурсивно відображає вміст усіх підкаталогів поточного каталогу |
+| `ls -d` | Показує сам каталог як об'єкт, а не його вміст (зручно при роботі з шаблонами) |
+| `cp` | Копіює файл або каталог з одного місця в інше |
+| `cp -v` / `--verbose` | Копіює файли та відображає процес копіювання (які файли копіюються) |
+| `cp -p` | Копіює файл із збереженням атрибутів: права доступу, власник, час створення |
+| `cp -R` | Рекурсивно копіює каталоги разом із усіма файлами та підкаталогами |
 | `rm` | Видаляє файли з файлової системи |
-| `cp -p` | Копіює файл, зберігаючи його початкові атрибути (права доступу, час створення, власника) |
-| `cp -R` | Копіює каталоги разом з усіма файлами і підкаталогами рекурсивно |
-| `mkdir` | Створює новий каталог (директорію) |
-| `rm -r` | Видаляє каталог разом з усім його вмістом рекурсивно |
+| `rm -r` | Рекурсивно видаляє каталог разом із усім його вмістом |
 | `rmdir` | Видаляє порожній каталог |
-| `touch premove` | Створює новий порожній файл з назвою `premove` або оновлює дату його останньої зміни |
-| `mv premove postmove` | Перейменовує файл `premove` у `postmove` або переміщує його в інше місце |
+| `mkdir` | Створює новий каталог |
+| `touch premove` | Створює порожній файл `premove` або оновлює дату останньої зміни існуючого файлу |
+| `mv premove postmove` | Перейменовує файл `premove` у `postmove` або переміщує його в інший каталог |
 | `rm postmove` | Видаляє файл `postmove` з файлової системи |
-
 ### 2.2 — Робота в терміналі
 
 ---
@@ -217,15 +216,15 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
   
 ### 2.3 — Опис дій команд `cd`
 
-| Команда | Дія |
-| :--- | :--- |
-| `cd /` | Перехід до кореневого каталогу |
-| `cd /home` | Перехід до каталогу home |
-| `cd ~` | Перехід до домашнього каталогу користувача |
-| `cd` | Також переходить у домашній каталог |
-| `cd ..` | Перехід на один рівень вище |
-| `cd ../..` | Перехід на два рівні вище |
-| `cd -` | Повернення до попереднього каталогу |
+| Команда   | Опис дії |
+|-----------|-----------|
+| `cd /` | Перехід у кореневу директорію файлової системи |
+| `cd /home` | Відкриває каталог `home` |
+| `cd ~` | Переходить у домашню директорію поточного користувача |
+| `cd` | Виконує перехід до домашнього каталогу користувача |
+| `cd ..` | Піднімається на один рівень вище у структурі каталогів |
+| `cd ../..` | Переходить на два рівні вище від поточної директорії |
+| `cd -` | Повертає до попереднього відкритого каталогу |
 
 ---
 
@@ -307,14 +306,15 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
 
 ## Висновок (Conclusion)
 
-During the laboratory work, practical skills of working with the Bash command shell in the Linux operating system were obtained. The structure of the Linux file system and its differences from the Windows file system were examined. The FHS (Filesystem Hierarchy Standard) was also studied, which defines the structure and purpose of the main system directories.
+During the laboratory work, practical experience in using the Bash command-line interface in the Linux operating system was gained. The organization of the Linux file system and its main differences compared to the Windows file system were explored. In addition, the FHS (Filesystem Hierarchy Standard) was reviewed, which describes the structure and functions of the primary system directories.
 
-During the work, the basic commands for navigating the file system (`pwd`, `cd`, `ls`) and commands for managing files and directories (`touch`, `mkdir`, `cp`, `mv`, `rm`, `rmdir`) were studied. Practical skills in creating, copying, moving, renaming, and deleting files and directories in the terminal were developed.
+Throughout the lab, essential commands for navigating the file system (`pwd`, `cd`, `ls`) as well as commands for file and directory management (`touch`, `mkdir`, `cp`, `mv`, `rm`, `rmdir`) were analyzed. Hands-on practice included creating, copying, moving, renaming, and removing files and directories using the terminal.
 
-The acquired knowledge makes it possible to work effectively with the Linux file system through the command line and serves as a basis for further study of administration and the use of Linux-based operating systems.
+The knowledge obtained during this work enables more confident use of the Linux command line and provides a foundation for further learning related to system administration and working with Linux-based operating systems.
+
 
 ---
 
 ## Team Contributions
-- **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a terminal.
-- **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**: Completed tasks of preliminary preparation and answered the questions.
+
+- **Member 1 — [Tingem](https://github.com/Tingem)**
