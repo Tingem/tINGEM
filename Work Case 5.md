@@ -181,32 +181,33 @@ lpr filename
 
 ## Словник (Vocabulary)
 
-1. Automount — mechanism that automatically mounts a storage device when it is connected to the system, without requiring manual user intervention.
+1.1. **Print Queue** — черга завдань на друк, які очікують своєї обробки системою друку.
 
-2. Block Device — type of hardware device that stores data in fixed-size blocks (e.g., hard drives, USB flash drives) and is accessed via files in `/dev`.
+2. **Block Device** — пристрій зберігання даних, який працює з інформацією у вигляді фіксованих блоків (наприклад, жорсткі диски або USB-накопичувачі) і доступ до нього здійснюється через вузли в `/dev`.
 
-3. CUPS (Common UNIX Printing System) — printing system used in Linux and Unix-like operating systems that manages print jobs, printers, and queues.
+3. **CUPS (Common UNIX Printing System)** — підсистема друку в Unix-подібних ОС, яка відповідає за керування принтерами, чергами друку та обробку завдань.
 
-4. Driver — software that allows the operating system to communicate with hardware devices such as printers, USB drives, and other peripherals.
+4. **File System** — спосіб організації даних на носії інформації, який визначає структуру збереження файлів (наприклад, NTFS, ext4, FAT32).
 
-5. Mount Point — directory in the Linux file system where a storage device is attached and made accessible to the user.
+5. **Filesystem Hierarchy** — ієрархічна структура каталогів у системі, де всі файли починаються від кореневого каталогу `/` і впорядковуються за певними правилами.
 
-6. Mounting — process of attaching a file system from a storage device to a specific directory (mount point) in the Linux file hierarchy.
+6. **Mounting** — процедура підключення файлової системи пристрою до певної точки в структурі каталогів ОС.
 
-7. Unmounting — process of safely detaching a mounted file system, ensuring that all data is written and no processes are using the device.
+7. **Unmounting** — безпечне від’єднання файлової системи, під час якого завершуються всі операції запису та перевіряється відсутність активних процесів.
 
-8. Print Queue — list of print jobs waiting to be processed by the printer, managed by the printing system (CUPS).
+8. **Automount** — процес, за допомогою якого система самостійно підключає носій даних одразу після його під’єднання, без участі користувача.
 
-9. File System — method and data structure used by the operating system to organize and store files on a storage device (ext4, FAT32, exFAT).
+9. **Driver** — програмне забезпечення, що забезпечує взаємодію операційної системи з апаратними компонентами, такими як принтери чи накопичувачі.
 
-10. Filesystem Hierarchy — structure of directories in Linux, starting from the root directory `/`, where all files and devices are organized.
+10. **Mount Point** — каталог у файловій системі Linux, до якого підключається зовнішній носій і через який він стає доступним для користувача.
 
 ---
 
 ## Висновок (Conclusion)
 
- In this work, the process of connecting and using peripheral devices in a Linux operating system was examined using the examples of a USB flash drive and a printer. Special attention was given to the mounting mechanism, which allows the system to make external storage devices accessible through the file system, enabling users to read from and write to them. The differences between Linux and Windows in handling peripheral devices were also highlighted, showing that Linux provides more flexibility and transparency, while Windows focuses on automation and user convenience. Practical tasks demonstrated how to work with devices both through a graphical interface and the terminal, confirming that Linux offers multiple approaches to achieve the same result and giving the user greater control over system operations.
+ This work explored how peripheral devices are connected and used in a Linux operating system, using a USB flash drive and a printer as examples. Particular emphasis was placed on the mounting mechanism, which enables external storage to be integrated into the file system so that users can access, read, and modify data on it.
 
+The study also compared Linux and Windows in terms of device handling, noting that Linux offers greater flexibility and transparency, whereas Windows prioritizes automation and ease of use. Practical exercises demonstrated working with devices through both graphical tools and the command line, highlighting that Linux provides multiple ways to accomplish the same tasks and gives users a higher level of control over system operations.
 ---
 
 ## Team Contributions
