@@ -210,5 +210,4 @@ lpr filename
 ---
 
 ## Team Contributions
-- **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the practical part.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped with work and writted Vocabulary.
+- **Member 1 — [Tingem]([https://github.com/DimitriyArch](https://github.com/Tingem))**: Formatted the Markdown file and сompleted the practical part and did Conclusions, helped with work and writted Vocabulary.
