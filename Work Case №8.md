@@ -607,5 +607,4 @@ In conclusion, the findings confirm that Linux offers a robust and efficient com
 ---
 
 ## Team Contributions
-- **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a terminal.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped at DimitryArch`s work and writted Vocabulary.
+- **Member 1 — [Tingem](https://github.com/Tingem)**: Formatted the Markdown file and сompleted the work in a terminal.
